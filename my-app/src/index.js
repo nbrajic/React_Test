@@ -15,6 +15,9 @@ const App = () => {
     })
   },[])
 
+  let numOfPages = countries.length % 10
+    console.log(numOfPages);
+
   return (
     <>
       <Select setCountries={setCountries} setShow={setShow}/>
